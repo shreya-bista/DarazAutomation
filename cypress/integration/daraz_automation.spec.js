@@ -105,7 +105,7 @@ describe('Daraz-Website Automation', function () {
         cy.get('button[class="next-btn next-btn-primary next-btn-medium"]').contains('REMOVE').click()
     })
 
-    it.only('Visits the seller homepage (Oliz Homepage) in Daraz.', function () {
+    it('Visits the seller homepage (Oliz Homepage) in Daraz.', function () {
 
         cy.visit(Oliz_HomePage_url).title().should('contain', 'Oliz Store Nepal: Official Online Store - Daraz.com.np').wait(500);
     })
@@ -132,7 +132,7 @@ describe('Daraz-Website Automation', function () {
 
         cy.get('span[class="text"]').contains('Shop Now').click()
         //* Commented following assertion since at times, delivery charge text is not 'Free'.
-        // cy.get('.delivery-option-item__shipping-fee').should('contain.text', 'Free').wait(500)
+        // cy.get('.delivery-option-item__shipping-fee').should('contain', 'Free').wait(500)
     })
 
     it('Asks Question for the particular product in Daraz and verify the question', function () {
