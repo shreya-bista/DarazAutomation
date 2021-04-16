@@ -36,8 +36,8 @@ describe('Daraz-Website Automation', function () {
         cy.visit('/');
         // User LOGIN
         cy.get(LOGIN).click()
-        cy.get(Enter_Email).type('Enter Your Email').wait(1000)
-        cy.get(Enter_password).type('Enter Your Password').wait(1000)
+        cy.get(Enter_Email).type('').wait(1000)
+        cy.get(Enter_password).type('').wait(1000)
         cy.get(Login_button).click().wait(4000)
     })
 
@@ -131,7 +131,7 @@ describe('Daraz-Website Automation', function () {
     it('Clicks Shop Now -> Verify Free Delivery in Product page', function () {
 
         cy.get('span[class="text"]').contains('Shop Now').click()
-        //* Commented following assertion since at times, delivery charge text is not 'Free'.
+        //* Commented following assertion since At times, delivery charge text is not 'Free'.
         // cy.get('.delivery-option-item__shipping-fee').should('contain', 'Free').wait(500)
     })
 
