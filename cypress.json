@@ -1,10 +1,9 @@
 {
     "$schema": "https://on.cypress.io/cypress.schema.json",
-
-    "defaultCommandTimeout": 30000,
-    "baseUrl": "https://www.daraz.com.np/", "viewportWidth":1400, "viewportHeight":800, "chromeWebSecurity":false
-    
-
-
-
+    "baseUrl": "https://www.daraz.com.np/",
+    "viewportWidth": 1400,
+    "viewportHeight": 800,
+    "chromeWebSecurity": false,
+    "screenshotsFolder": "cypress/output",
+    "videosFolder": "cypress/output"
 }

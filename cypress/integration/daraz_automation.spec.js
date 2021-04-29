@@ -132,7 +132,7 @@ describe('Daraz-Website Automation', function () {
 
         cy.get('span[class="text"]').contains('Shop Now').click()
         //* Commented following assertion since At times, delivery charge text is not 'Free'.
-        // cy.get('.delivery-option-item__shipping-fee').should('contain', 'Free').wait(500)
+        //cy.get('.delivery-option-item__shipping-fee').should('contain', 'Free').wait(500)
     })
 
     it('Asks Question for the particular product in Daraz and verify the question', function () {
